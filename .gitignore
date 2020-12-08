@@ -1,1 +1,9 @@
-/MSOE/CS1020/Labs/holewinski-lab-2/src/holewinskit/BakedIngredient.java
+# EXCLUDE ANYTHING THAT IS NOT A ZIPPED FILE IN THE LABS FOLDER
+
+**/Labs/*
+!**/Labs/*.zip
+
+# EXCLUDE intellij PROJECT FILES THAT ARE DIRECTLY ON THE BASE PATH
+
+out/
+.idea/

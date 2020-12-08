@@ -1,6 +1,0 @@
-## EXCLUDE LABS UNLESS LABS ARE ZIPPED
-## .gitignore version: v1.0
-## 12 / 8 / 2020
-## Tyler Holewinski
-**/Labs/*
-!**/Labs/*.zip
