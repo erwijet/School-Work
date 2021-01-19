@@ -1,1 +1,6 @@
-/MSOE/CS1020/Labs/holewinski-lab-2/src/holewinskit/BakedIngredient.java
+## EXCLUDE LABS UNLESS LABS ARE ZIPPED
+## .gitignore version: v1.0
+## 12 / 8 / 2020
+## Tyler Holewinski
+**/Labs/*
+!**/Labs/*.zip
