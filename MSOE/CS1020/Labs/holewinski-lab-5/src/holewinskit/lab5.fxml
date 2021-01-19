@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="506.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="holewinskit.Controller">
+   <bottom>
+      <VBox prefHeight="106.0" prefWidth="400.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="65.0" prefWidth="400.0">
+               <children>
+                  <Button fx:id="btnNext" mnemonicParsing="false" onAction="#btnNext_handleClick" prefHeight="25.0" prefWidth="137.0" text="Next Iteration">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+                  <HBox prefHeight="34.0" prefWidth="85.0">
+                     <HBox.margin>
+                        <Insets bottom="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </HBox>
+                  <Button fx:id="btnRandom" mnemonicParsing="false" onAction="#btnRandom_handleClick" prefHeight="25.0" prefWidth="137.0" text="Randomize">
+                     <HBox.margin>
+                        <Insets left="20.0" right="20.0" top="20.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <VBox prefHeight="34.0" prefWidth="168.0">
+               <children>
+                  <Label fx:id="lblDeadCells" prefHeight="17.0" prefWidth="172.0" text="Dead Cells: &lt;not started&gt;" />
+                  <Label fx:id="lblAliveCells" text="Alive Cells: &lt;not started&gt;" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </VBox>
+         </children>
+      </VBox>
+   </bottom>
+   <center>
+      <Pane fx:id="gamePane" onMouseClicked="#gamePane_handleClick" prefHeight="400.0" prefWidth="400.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
