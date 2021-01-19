@@ -1,6 +1,18 @@
+<<<<<<< HEAD
 ## EXCLUDE LABS UNLESS LABS ARE ZIPPED
 ## .gitignore version: v1.0
 ## 12 / 8 / 2020
 ## Tyler Holewinski
 **/Labs/*
 !**/Labs/*.zip
+=======
+# EXCLUDE ANYTHING THAT IS NOT A ZIPPED FILE IN THE LABS FOLDER
+
+**/Labs/*
+!**/Labs/*.zip
+
+# EXCLUDE intellij PROJECT FILES THAT ARE DIRECTLY ON THE BASE PATH
+
+out/
+.idea/
+>>>>>>> b03bee70c6ae5638f6d186cc08079a8e6df3fe06
