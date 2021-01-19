@@ -8,8 +8,9 @@
 =======
 # EXCLUDE ANYTHING THAT IS NOT A ZIPPED FILE IN THE LABS FOLDER
 
-**/Labs/*
-!**/Labs/*.zip
+**/Labs/*/.idea/ #EXCLUDE IDEA FOLDER
+# **/Labs/*
+# !**/Labs/*.zip
 
 # EXCLUDE intellij PROJECT FILES THAT ARE DIRECTLY ON THE BASE PATH
 
