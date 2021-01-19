@@ -3,8 +3,8 @@
 ## .gitignore version: v1.0
 ## 12 / 8 / 2020
 ## Tyler Holewinski
-**/Labs/*
-!**/Labs/*.zip
+#**/Labs/*
+#!**/Labs/*.zip
 =======
 # EXCLUDE ANYTHING THAT IS NOT A ZIPPED FILE IN THE LABS FOLDER
 

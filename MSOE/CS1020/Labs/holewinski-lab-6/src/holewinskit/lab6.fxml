@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" prefHeight="566.0" prefWidth="557.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="holewinskit.Lab6Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <VBox prefHeight="566.0" prefWidth="660.0" GridPane.columnIndex="1">
+         <children>
+            <VBox prefHeight="162.0" prefWidth="660.0">
+               <children>
+                  <HBox prefHeight="40.0" prefWidth="557.0">
+                     <children>
+                        <Label prefHeight="24.0" prefWidth="28.0" text="URL">
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="tfURL" prefHeight="25.0" prefWidth="422.0" text="http://google.com">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Button fx:id="btnAnalyze" mnemonicParsing="false" onAction="#analyze" text="Analyze">
+                           <HBox.margin>
+                              <Insets left="10.0" right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="34.0" prefWidth="547.0">
+                     <children>
+                        <Label prefHeight="24.0" prefWidth="81.0" text="Response Size">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="tfResSize" editable="false" prefHeight="25.0" prefWidth="53.0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label layoutX="20.0" layoutY="20.0" prefHeight="25.0" prefWidth="15.0" text="b">
+                           <HBox.margin>
+                              <Insets bottom="5.0" right="10.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label prefHeight="24.0" prefWidth="24.0" text="Port">
+                           <HBox.margin>
+                              <Insets bottom="10.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="tfPort" editable="false" prefHeight="25.0" prefWidth="63.0">
+                           <HBox.margin>
+                              <Insets bottom="10.0" left="5.0" right="10.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label layoutX="225.0" layoutY="20.0" prefHeight="24.0" prefWidth="32.0" text="Host">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="tfHost" editable="false" layoutX="323.0" layoutY="20.0" prefHeight="25.0" prefWidth="234.0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" right="10.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="49.0" prefHeight="36.0" prefWidth="547.0">
+                     <children>
+                        <Label prefHeight="24.0" prefWidth="55.0" text="Timeout">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="tfTimeout" prefHeight="25.0" prefWidth="55.0">
+                           <HBox.margin>
+                              <Insets bottom="10.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label layoutX="20.0" layoutY="20.0" prefHeight="24.0" prefWidth="17.0" text="ms">
+                           <HBox.margin>
+                              <Insets bottom="10.0" right="10.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="btnSetTimeout" mnemonicParsing="false" onAction="#setTimeout" prefHeight="25.0" prefWidth="40.0" text="Set">
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Pane prefHeight="68.0" prefWidth="13.0" />
+                        <Pane prefHeight="40.0" prefWidth="92.0" />
+                        <Label prefHeight="24.0" prefWidth="72.0" text="Time Elapsed">
+                           <HBox.margin>
+                              <Insets bottom="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                        <TextField fx:id="tfElapsed" editable="false" prefHeight="25.0" prefWidth="135.0">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="10.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <Label text="ms">
+                           <HBox.margin>
+                              <Insets right="10.0" top="10.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</GridPane>
