@@ -3,8 +3,9 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<GridPane alignment="center" hgap="10" prefHeight="566.0" prefWidth="557.0" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="holewinskit.Lab6Controller">
+<GridPane alignment="center" hgap="10" prefHeight="566.0" prefWidth="557.0" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="holewinskit.Lab6Controller">
    <columnConstraints>
       <ColumnConstraints />
       <ColumnConstraints />
@@ -24,7 +25,7 @@
                               <Insets left="10.0" right="10.0" top="10.0" />
                            </HBox.margin>
                         </Label>
-                        <TextField fx:id="tfURL" prefHeight="25.0" prefWidth="422.0" text="http://google.com">
+                        <TextField fx:id="tfURL" onAction="#analyze" prefHeight="25.0" prefWidth="422.0" text="http://google.com">
                            <HBox.margin>
                               <Insets top="10.0" />
                            </HBox.margin>
@@ -82,7 +83,7 @@
                               <Insets left="10.0" top="5.0" />
                            </HBox.margin>
                         </Label>
-                        <TextField fx:id="tfTimeout" prefHeight="25.0" prefWidth="55.0">
+                        <TextField fx:id="tfTimeout" onAction="#setTimeout" prefHeight="25.0" prefWidth="55.0">
                            <HBox.margin>
                               <Insets bottom="10.0" right="5.0" top="5.0" />
                            </HBox.margin>
@@ -118,6 +119,13 @@
                   </HBox>
                </children>
             </VBox>
+            <TextArea fx:id="taRes" editable="false" minHeight="-Infinity" minWidth="-Infinity" prefHeight="386.0" prefWidth="545.0" wrapText="true">
+               <font>
+                  <Font name="Courier New" size="22.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="20.0" top="10.0" />
+               </VBox.margin></TextArea>
          </children>
       </VBox>
    </children>

@@ -1,3 +1,13 @@
+/**
+ * Lab6.java
+ *
+ * Course: CS1021 - Winter
+ * @author Tyler Holewinski
+ *
+ * Prof. Dr. Berisha
+ * Date: 1/19/2021
+ */
+
 package holewinskit;
 
 import javafx.application.Application;
@@ -11,7 +21,7 @@ public class Lab6 extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("lab6.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("holewinskit Lab 6 [Web Tester]");
         primaryStage.setScene(new Scene(root, 566, 600));
         primaryStage.show();
     }
