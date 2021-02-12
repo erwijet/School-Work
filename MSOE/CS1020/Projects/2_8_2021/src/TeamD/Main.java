@@ -8,24 +8,21 @@
 
 package TeamD;
 
-import javax.swing.text.html.HTMLDocument;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.DoubleStream;
-import java.util.Scanner;
 import java.nio.file.Paths;
 import java.nio.file.Files;
-import java.util.stream.Stream;
-
 
 public class Main {
     public static void main(String[] args) {
-        // Hello All!
-
-
+//        List<Complex> nums = new ArrayList<>();
+//        nums.add(new Complex(3.6, 1));
+//        nums.add(new Complex(1.2, 0));
+//
+//        System.out.println(Complex.getReal(nums));
     }
 
     /**
@@ -85,6 +82,4 @@ public class Main {
         return Files.lines(Paths.get("complexies.txt")).map(c -> new Complex(c)).mapToDouble(c -> c.getAngle()).average().getAsDouble();
 
     }
-
-
 }
