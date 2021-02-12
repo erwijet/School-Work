@@ -17,8 +17,4 @@ public class IsReal implements Predicate<Complex> {
     public boolean test(Complex c){
         return c.getImag() == 0;
     }
-
-
-
-
 }

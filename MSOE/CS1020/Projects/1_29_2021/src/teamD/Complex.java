@@ -1,6 +1,7 @@
 package teamD;
 
 import java.io.*;
+import java.nio.file.Files;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -283,6 +284,10 @@ public class Complex {
 
     public void writeObj (ObjectOutputStream out){
 
+    }
+
+    public static double activity9() throws IOException, IOException {
+        return Files.lines(Paths.get("complexies.txt")).map(c -> new Complex(c)).mapToDouble(c -> c.getAngle()).average().getAsDouble();
     }
 
 }

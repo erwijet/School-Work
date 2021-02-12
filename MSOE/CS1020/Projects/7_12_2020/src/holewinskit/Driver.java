@@ -53,4 +53,6 @@ public class Driver {
         double totalArea = sumAreas(shapes);
         System.out.println("The total area of the shapes is: " + totalArea);
     }
+
+    
 }

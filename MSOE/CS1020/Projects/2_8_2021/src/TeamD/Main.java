@@ -18,6 +18,7 @@ import java.util.stream.DoubleStream;
 import java.util.Scanner;
 import java.nio.file.Paths;
 import java.nio.file.Files;
+import java.util.stream.Stream;
 
 
 public class Main {
@@ -48,13 +49,7 @@ public class Main {
     }
 
     public static void activity5(List<Complex>nums){
-
-        Complex.getSpecified(nums, new Predicate<Complex>() {
-            @Override
-            public boolean test(Complex complex) {
-                return complex.getReal() > 27;
-            }
-        });
+        Complex.getSpecified(nums, c -> c.getReal() > 27);
     }
 
     public static List<Complex> activity6(List<Complex> complex){
@@ -68,24 +63,28 @@ public class Main {
     /**
      * @author Tyler Holewinski
      */
-    public static void activity8() {
+    public static Double activity8() {
         final List<Complex> nums = Arrays.asList(
                 new Complex(8, 8),
                 new Complex(5, 0)
                 /* etc... */
         );
 
-        DoubleStream.of(
-                nums.stream().map(n -> n.)
-        )
+        DoubleStream.Builder builder = DoubleStream.builder();
+
+        nums.stream().map(Complex::getAngle).forEach(builder::accept);
+
+        return builder.build().average() .getAsDouble();
     }
 
-    public static void activity9(){
-        try {
-            Stream<String> lines = Files.lines(Paths.get("complexies.txt"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    /**
+     * @author Grace and Nick
+     * */
+    public static double activity9() throws IOException {
+
+        return Files.lines(Paths.get("complexies.txt")).map(c -> new Complex(c)).mapToDouble(c -> c.getAngle()).average().getAsDouble();
 
     }
+
+
 }
