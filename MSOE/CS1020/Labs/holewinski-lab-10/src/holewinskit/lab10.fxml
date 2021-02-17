@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="holewinskit.Lab10Controller">
+   <children>
+      <VBox prefHeight="404.0" prefWidth="608.0">
+         <children>
+            <MenuBar>
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                        <MenuItem mnemonicParsing="false" onAction="#perfromSave" text="Save" />
+                    <MenuItem mnemonicParsing="false" onAction="#performOpen" text="Open" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <MenuItem mnemonicParsing="false" onAction="#performExit" text="Exit Image Manipulator" />
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Edit">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#performReload" text="Reload" />
+                        <MenuItem mnemonicParsing="false" onAction="#openFilter" text="Show Filter Editor" />
+                        <SeparatorMenuItem mnemonicParsing="false" />
+                        <Menu mnemonicParsing="false" text="Apply Effect">
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#performNegative" text="Negative" />
+                              <MenuItem mnemonicParsing="false" onAction="#performGreyscale" text="Grayscale" />
+                              <MenuItem mnemonicParsing="false" onAction="#red" text="Red" />
+                              <MenuItem mnemonicParsing="false" onAction="#redGray" text="Red-Gray" />
+                          </items>
+                        </Menu>
+                  </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <ImageView fx:id="imageView" fitHeight="376.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true" />
+            <ToolBar prefHeight="0.0" prefWidth="470.0">
+               <items>
+                  <Label fx:id="lblPath" text="&lt;No File Opened&gt;" />
+                  <Label fx:id="lblFormat" />
+                  <Label fx:id="lblCurColor" layoutX="10.0" layoutY="10.0" />
+               </items>
+            </ToolBar>
+         </children>
+      </VBox>
+   </children>
+</HBox>
