@@ -15,7 +15,7 @@ public class Lab10 extends Application {
 
         Parent root = FXMLLoader.load(getClass().getResource("lab10.fxml"));
         primaryStage.setTitle("Image Manipulator");
-        primaryStage.setScene(new Scene(root, 600, 403));
+        primaryStage.setScene(new Scene(root, 600, 427));
         primaryStage.show();
     }
 

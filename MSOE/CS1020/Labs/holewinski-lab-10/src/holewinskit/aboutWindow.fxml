@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="187.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/8.0.202-ea" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="733.0" minWidth="10.0" prefWidth="623.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="46.0" minHeight="10.0" prefHeight="43.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="42.0" minHeight="10.0" prefHeight="39.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="About Image Manipulator [v1.2] by Tyler Holewinski">
+         <GridPane.margin>
+            <Insets top="5.0" />
+         </GridPane.margin></Label>
+      <Label text="Source Code avalible at https://github.com/erwijet/School-Work/tree/master/MSOE/CS1020/Labs/holewinski-lab-10" GridPane.rowIndex="1">
+         <GridPane.margin>
+            <Insets top="5.0" />
+         </GridPane.margin></Label>
+      <Label text="Built as a part of CS1021 at MSOE" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets top="5.0" />
+         </GridPane.margin></Label>
+   </children>
+</GridPane>

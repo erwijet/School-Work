@@ -4,9 +4,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="holewinskit.Lab10Controller">
-   <children>
-      <VBox prefHeight="404.0" prefWidth="608.0">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="404.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.202-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="holewinskit.Lab10Controller">
          <children>
             <MenuBar>
               <menus>
@@ -21,7 +19,6 @@
                 <Menu mnemonicParsing="false" text="Edit">
                   <items>
                     <MenuItem mnemonicParsing="false" onAction="#performReload" text="Reload" />
-                        <MenuItem mnemonicParsing="false" onAction="#openFilter" text="Show Filter Editor" />
                         <SeparatorMenuItem mnemonicParsing="false" />
                         <Menu mnemonicParsing="false" text="Apply Effect">
                           <items>
@@ -33,22 +30,26 @@
                         </Menu>
                   </items>
                 </Menu>
+            <Menu mnemonicParsing="false" text="Window">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#launchMouseOverWindow" text="Show Color Observer" />
+                        <MenuItem mnemonicParsing="false" onAction="#openFilter" text="Show Filter Editor" />
+              </items>
+            </Menu>
                 <Menu mnemonicParsing="false" text="Help">
                   <items>
-                    <MenuItem mnemonicParsing="false" text="About" />
+                    <MenuItem mnemonicParsing="false" onAction="#showAbout" text="About" />
                   </items>
                 </Menu>
               </menus>
             </MenuBar>
-            <ImageView fx:id="imageView" fitHeight="376.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="imageView" fitHeight="376.0" fitWidth="470.0" onMouseMoved="#imgMouseOver" pickOnBounds="true" preserveRatio="true" />
             <ToolBar prefHeight="0.0" prefWidth="470.0">
                <items>
+                  <Label fx:id="lblStatus" layoutX="10.0" layoutY="10.0" text="[No Action Taken] (ready)" />
                   <Label fx:id="lblPath" text="&lt;No File Opened&gt;" />
-                  <Label fx:id="lblFormat" />
-                  <Label fx:id="lblCurColor" layoutX="10.0" layoutY="10.0" />
                </items>
             </ToolBar>
          </children>
-      </VBox>
-   </children>
-</HBox>
+
+</VBox>
